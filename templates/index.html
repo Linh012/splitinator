@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1>THE SPLITINATOR!</h1>
+        <p>This web app uses Bootstrap for styling and jQuery is also used for some parts of the web application.</p>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">What a <b>lame</b> name!</h3> 
+                    <p class="card-text">I wonder who came up with it... But not a lame web application! (I hope...)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Head to the dashboard!</h3>
+                    <a class="btn btn-dark" role="button" href="{{ url_for('dashboard') }}">Dashboard</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">New here or not logged in?</h4>
+                    <a class="btn btn-dark" role="button" href="{{ url_for('login') }}">Login</a> or 
+                    <a class="btn btn-dark" role="button" href="{{ url_for('register') }}">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

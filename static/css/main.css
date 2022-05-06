@@ -1,0 +1,15 @@
+.form-check {
+    padding-top: 7.5px;
+}
+
+.splitForm, .payForm, .deleteForm {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: None;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
